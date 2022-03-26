@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>
+        <%= product.name  %>
+    </h1>
+    <ul>
+        <li>name:
+            <%= product.name %>
+        </li>
+        <li>price:
+            <%= product.price %>
+        </li>
+    </ul>
+    <a href="/products">all products</a>
+    <a href="/products/<%= product._id %>/edit ">Edit-Products</a>
+    <form action="/products/<%= product._id %>?_method=DELETE " method="POST">
+        <button>Delete</button></form>
+</body>
+
+</html>
